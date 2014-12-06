@@ -22,16 +22,11 @@ public class Movement : MonoBehaviour {
 		currentY = 0;
 
 		//Initialize array of sprites
+		spriteArray = new SpriteFlipper[width, height];
 		//Find the child object with the name of the current index
 		//GameObject currentSprite = spriteParent.transform.Find("Sprite0,0").gameObject;
-		//
 		GameObject currentSprite = GameObject.Find("Sprite0,0").gameObject;
-		if (currentSprite == null) {
-			print ("no sprite found");
-		} else {
-			//Find the SpriteFlipper script of that child object
-			spriteArray[0,0] = (SpriteFlipper) currentSprite.GetComponent(typeof(SpriteFlipper));
-		}
+		spriteArray[0,0] = currentSprite.GetComponent<SpriteFlipper>();
 	}
 	
 	void Update() {

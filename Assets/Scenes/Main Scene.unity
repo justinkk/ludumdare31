@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f70a8ae449e43cebb51df8ebd62a70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 7
-  height: 6
+  width: 1
+  height: 1
   spriteParent: {fileID: 875546344}
 --- !u!4 &98537942
 Transform:
