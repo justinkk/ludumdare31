@@ -6136,6 +6136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a7ec45a5443497eb61390e02a7136e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPhoneTime: 2
+  minPhoneTime: 1
 --- !u!1 &1754604979
 GameObject:
   m_ObjectHideFlags: 0

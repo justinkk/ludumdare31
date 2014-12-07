@@ -21,6 +21,10 @@ public class PhoneController : MonoBehaviour {
 
 	private SpriteFlipper[,] phones;
 
+	public float maxPhoneTime; //The maximum time in seconds between new phones
+	public float minPhoneTime; //The minimum time in seconds between new phones
+	private float nextPhoneTime; //The time needed before the next phone is generated
+
 	/********Testing
 	*	private float nextTime; //Testing only
 	*	private int currX;
@@ -36,12 +40,15 @@ public class PhoneController : MonoBehaviour {
 				//Find the right SpriteFlipper
 				int[] chairIndices = phoneIndexToPlayerIndex(x,y);
 				Transform chair = transform.Find("Chair" + chairIndices[0] + "," + chairIndices[1]);
-				print(chair);
+				//print(chair);
 
 				//phones[x,y] = null;
 				phones[x,y] = chair.Find("Phone").gameObject.GetComponent<SpriteFlipper>();
 			}
 		}
+
+		//Leave some time before the first phone appears
+		nextPhoneTime = 1.5f;
 
 		/*
 		*	//Populate the dictionary
@@ -60,6 +67,9 @@ public class PhoneController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (Time.time > nextPhoneTime)
+			generateRandomPhone();
+
 		/* TESTING
 		if (Time.time > nextTime) {
 			phones[currX,currY].setDark(true);
@@ -75,16 +85,21 @@ public class PhoneController : MonoBehaviour {
 		}*/
 	}
 
+	//Times when the next phone will appear
+	private void timeNextPhone() {
+		nextPhoneTime = Time.time + Random.Range(minPhoneTime, maxPhoneTime);
+	}
+
 	/**Creates a cell phone in the given location and waits for the next one
 	 * Must pass in a valid location for a phone
 	 */
-	/*private void createPhone(int phoneX, int phoneY) {
-		cellPhones[phoneX, phoneY] = true;
+	private void createPhone(int phoneX, int phoneY) {
+		phones[phoneX, phoneY].setDark(true);
 		timeNextPhone();
-	}*/
+	}
 
 	//Randomly chooses a location for a new cell phone and generates it
-	/*private void generateRandomPhone() {
+	private void generateRandomPhone() {
 		int phoneX = 0, phoneY = 0;
 
 		//Generate the Y
@@ -92,22 +107,24 @@ public class PhoneController : MonoBehaviour {
 		if (randomChance < 0.2f)
 			phoneY = 0;
 		else if (randomChance < 0.5f)
-			phoneY = 2;
+			phoneY = 1;
 		else
-			phoneY = 4;
+			phoneY = 2;
 
 		//Generate the X
 		randomChance = Random.value;
 		if (randomChance < 0.1f)
-			phoneX = 1;
+			phoneX = 0;
 		else if (randomChance < 0.4f)
-			phoneX = 2;
+			phoneX = 1;
 		else if (randomChance < 0.6f)
-			phoneX = 3;
+			phoneX = 2;
 		else if (randomChance < 0.9f)
+			phoneX = 3;
+		else
 			phoneX = 4;
 
 		//Make the phone
 		createPhone(phoneX, phoneY);
-	}*/
+	}
 }
