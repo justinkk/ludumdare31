@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class SpriteFlipper : MonoBehaviour {
-
 	private Animator anim;
 
 	void Start() {

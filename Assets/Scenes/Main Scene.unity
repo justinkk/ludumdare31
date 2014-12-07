@@ -415,6 +415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 7
   height: 6
+  currentX: 0
+  currentY: 0
   spriteParent: {fileID: 875546344}
 --- !u!4 &98537942
 Transform:
@@ -2490,6 +2492,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1452680700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1452680701}
+  - 132: {fileID: 1452680703}
+  - 114: {fileID: 1452680702}
+  m_Layer: 0
+  m_Name: Chair1,0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1452680701
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452680700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8829236, y: -3.58423734, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1747951071}
+  m_RootOrder: 0
+--- !u!114 &1452680702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452680700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa109605d16743f0aa97d4bf725678d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameControllerObject: {fileID: 127001348}
+  playerObject: {fileID: 98537940}
+  row: 0
+  column: 1
+--- !u!132 &1452680703
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452680700}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: hey
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 4f89107a07b554794a0c07fcfe5ae291, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1465878109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,6 +3027,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1747951070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1747951071}
+  m_Layer: 0
+  m_Name: Chairs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747951071
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747951070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1452680701}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1807531996
 GameObject:
   m_ObjectHideFlags: 0

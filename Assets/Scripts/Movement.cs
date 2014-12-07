@@ -8,8 +8,8 @@ public class Movement : MonoBehaviour {
 	public int height;
 
 	//These variables track the player's current position
-	private int currentX;
-	private int currentY;
+	public int currentX;
+	public int currentY;
 
 	
 	public GameObject spriteParent;       //The collection of sprites that can be light or dark
@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour {
 		}
 
 		//Have the first sprite visible
-		darken();
+		//darken();
 	}
 	
 	void Update() {
