@@ -136,9 +136,17 @@ public class PhoneController : MonoBehaviour {
 
 	/**Creates a cell phone in the given location and waits for the next one
 	 * Must pass in a valid location for a phone
+	 * This also bothers everyone nearby
 	 */
 	private void createPhone(int phoneX, int phoneY) {
+		//Turn on the phone
 		phones[phoneX, phoneY].setDark(true);
+		//Bother everybody
+		ChairController[] nearbyChairs = chairsNear(phoneX,phoneY);
+		for (int i = 0; i < nearbyChairs.Length; i++) {
+			nearbyChairs[i].phonesBothering++;
+		}
+		//Wait to next phone
 		timeNextPhone();
 	}
 
@@ -176,6 +184,13 @@ public class PhoneController : MonoBehaviour {
 	//Don't call this unless the player is located at a phone
 	public void QuietPhone() {
 		int[] phoneCoordinates = playerIndexToPhoneIndex(player.currentX, player.currentY);
-		phones[phoneCoordinates[0],phoneCoordinates[1]].setDark(false);
+		if(phones[phoneCoordinates[0],phoneCoordinates[1]].isCurrentlyDark) {
+			phones[phoneCoordinates[0],phoneCoordinates[1]].setDark(false);
+
+			ChairController[] nearbyChairs = chairsNear(phoneCoordinates[0],phoneCoordinates[1]);
+			for (int i = 0; i < nearbyChairs.Length; i++) {
+				nearbyChairs[i].phonesBothering--;
+			}
+		}
 	}
 }

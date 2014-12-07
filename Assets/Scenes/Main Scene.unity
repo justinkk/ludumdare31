@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &11476259
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +221,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 2
   column: 2
+  phonesBothering: 0
 --- !u!1 &13944682
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +290,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 2
   column: 3
+  phonesBothering: 0
 --- !u!1 &33333936
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &62852013
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &66259686
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &88002912
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &127001348
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,8 +813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911a4212c959a4b99aaa4b50b77c13f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockingAnger: 2
-  phoneAnger: 3
+  blockingAnger: 1.10000002
+  phoneAnger: 2
   coolOff: 1
   maxAnger: 10
   scoreMessage: 'Score: '
@@ -912,6 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &142434054
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +988,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 4
   column: 2
+  phonesBothering: 0
 --- !u!1 &164038356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &179330437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &192653732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &248314808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &254353189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,6 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &272373097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &279669639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1531,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 0
   column: 2
+  phonesBothering: 0
 --- !u!1 &289203194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &300261850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,6 +1745,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 4
   column: 3
+  phonesBothering: 0
 --- !u!1 &364960877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +1824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &369288450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +1959,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 4
   column: 4
+  phonesBothering: 0
 --- !u!1 &386752531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,6 +2038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &435570163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,6 +2117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &441681966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!4 &441681970
 Transform:
   m_ObjectHideFlags: 0
@@ -2252,6 +2275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &497043175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,6 +2354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &588330891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &668428218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &705158258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +2591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &705854983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,6 +2670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &728081551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +2815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &756999290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,6 +3004,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 4
   column: 1
+  phonesBothering: 0
 --- !u!224 &810150181
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3206,6 +3237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &924583186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,6 +3316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &937033166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,6 +3395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1040613716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3496,6 +3530,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 0
   column: 4
+  phonesBothering: 0
 --- !u!1 &1056462661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3564,6 +3599,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 4
   column: 5
+  phonesBothering: 0
 --- !u!1 &1061204897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,6 +3678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1066259141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,6 +3757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1077865394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3820,6 +3858,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 0
   column: 3
+  phonesBothering: 0
 --- !u!1 &1109646322
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,6 +3937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1135690146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,6 +4016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1148128111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,6 +4095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1173193302
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1182876984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,6 +4319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1203720473
 GameObject:
   m_ObjectHideFlags: 0
@@ -4354,6 +4398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1204872604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,6 +4477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1252731855
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4612,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 2
   column: 5
+  phonesBothering: 0
 --- !u!1 &1327980657
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,6 +4691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1342421822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4722,6 +4770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1345707344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,6 +4915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1390268678
 GameObject:
   m_ObjectHideFlags: 0
@@ -4944,6 +4994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1431743449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,6 +5129,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 2
   column: 1
+  phonesBothering: 0
 --- !u!1 &1452680700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,6 +5162,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 0
   column: 1
+  phonesBothering: 0
 --- !u!223 &1452680703
 Canvas:
   m_ObjectHideFlags: 0
@@ -5224,6 +5277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1472328170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5302,6 +5356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1492771582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5380,6 +5435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1496418030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5458,6 +5514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1503592721
 GameObject:
   m_ObjectHideFlags: 0
@@ -5627,6 +5684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1599078213
 GameObject:
   m_ObjectHideFlags: 0
@@ -5693,6 +5751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!4 &1599078217
 Transform:
   m_ObjectHideFlags: 0
@@ -5849,6 +5908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1642677231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5915,6 +5975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!4 &1642677235
 Transform:
   m_ObjectHideFlags: 0
@@ -6005,6 +6066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1732615142
 GameObject:
   m_ObjectHideFlags: 0
@@ -6083,6 +6145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1747951070
 GameObject:
   m_ObjectHideFlags: 0
@@ -6137,8 +6200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a7ec45a5443497eb61390e02a7136e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPhoneTime: 2
-  minPhoneTime: 1
+  maxPhoneTime: 3
+  minPhoneTime: 1.5
   playerObject: {fileID: 98537940}
 --- !u!1 &1754604979
 GameObject:
@@ -6274,6 +6337,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 2
   column: 4
+  phonesBothering: 0
 --- !u!1 &1804145795
 GameObject:
   m_ObjectHideFlags: 0
@@ -6418,6 +6482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1821785118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6474,6 +6539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!212 &1821785122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6658,6 +6724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1888982366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6736,6 +6803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1898564893
 GameObject:
   m_ObjectHideFlags: 0
@@ -6814,6 +6882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &1987887019
 GameObject:
   m_ObjectHideFlags: 0
@@ -6958,6 +7027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!1 &2024375123
 GameObject:
   m_ObjectHideFlags: 0
@@ -7026,6 +7096,7 @@ MonoBehaviour:
   playerObject: {fileID: 98537940}
   row: 0
   column: 5
+  phonesBothering: 0
 --- !u!1 &2071031735
 GameObject:
   m_ObjectHideFlags: 0
@@ -7104,3 +7175,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCurrentlyDark: 0

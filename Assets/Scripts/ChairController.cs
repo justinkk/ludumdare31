@@ -42,7 +42,7 @@ public class ChairController : MonoBehaviour {
 		}
 
 		//If phones are bothering you
-
+		deltaAnger += phonesBothering * gameController.phoneAnger*Time.deltaTime;
 
 		//Apply change
 		anger += deltaAnger;

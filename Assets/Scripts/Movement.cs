@@ -40,6 +40,8 @@ public class Movement : MonoBehaviour {
 		//gameController.cellPhones[currentX,currentY] = false;
 	}
 
+	private bool hasNotStarted; //true until the first frame of gameplay
+
 	void Start() {
 		//Set position to bottom-left
 		currentX = 0;
@@ -60,10 +62,16 @@ public class Movement : MonoBehaviour {
 		phoneController = phoneControllerObject.GetComponent<PhoneController>();
 
 		//Have the first sprite visible
+		hasNotStarted = true;
 		//darken();
 	}
 	
 	void Update() {
+		if (hasNotStarted) {
+			darken();
+			hasNotStarted = false;
+		}
+
 		if(Input.GetKeyDown("right")) {
 			//Movement only allowed in even rows, and when not on the very right
 			if(currentX < width - 1 && currentY % 2 == 1) 
