@@ -11,7 +11,8 @@ public class Movement : MonoBehaviour {
 	public int currentX;
 	public int currentY;
 
-	
+	public GameObject gameControllerObject;     //The game controller object
+	private GameRunner gameController;          //The script of the game controller
 	public GameObject spriteParent;       //The collection of sprites that can be light or dark
 	private SpriteFlipper[,] spriteArray; //The array of flippers for the sprites
 
@@ -23,6 +24,18 @@ public class Movement : MonoBehaviour {
 	//Turn the current sprite dark
 	public void darken() {
 		spriteArray[currentX,currentY].setDark(true);
+	}
+
+	//Moves to a location, clearing any cell phones in that location
+	public void moveTo(int newX, int newY) {
+		//Change the appearance
+		lighten();
+		currentX = newX;
+		currentY = newY;
+		darken();
+
+		//Clear any cell phones in the new location
+		gameController.cellPhones[currentX,currentY] = false;
 	}
 
 	void Start() {
@@ -40,6 +53,9 @@ public class Movement : MonoBehaviour {
 			}
 		}
 
+		//Set up reference to script
+		gameController = gameControllerObject.GetComponent<GameRunner>();
+
 		//Have the first sprite visible
 		//darken();
 	}
@@ -47,32 +63,40 @@ public class Movement : MonoBehaviour {
 	void Update() {
 		if(Input.GetKeyDown("right")) {
 			//Movement only allowed in even rows, and when not on the very right
-			if(currentX < width - 1 && currentY % 2 == 1) {
+			if(currentX < width - 1 && currentY % 2 == 1) 
+				moveTo(currentX + 1, currentY);
+			/*{
 				lighten();
 				currentX++;
 				darken();
-			}
+			}*/
 		} else if(Input.GetKeyDown("left")) {
 			//Movement only allowed in even rows, and when not on the very left
-			if(currentX > 0 && currentY % 2 == 1) {
+			if(currentX > 0 && currentY % 2 == 1) 
+				moveTo(currentX-1, currentY);
+			/*{
 				lighten();
 				currentX--;
 				darken();
-			}
+			}*/
 		} else if(Input.GetKeyDown("up")) {
 			//Movement up not allowed when at very top and when in an even row except on the edges
-			if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1)) {
+			if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1)) 
+				moveTo(currentX, currentY + 1);
+			/*{
 				lighten();
 				currentY++;
 				darken();
-			}
+			}*/
 		} else if(Input.GetKeyDown("down")) {
 			//Movement down not allowed when at very bottom and when in an odd row except on the edges
-			if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) {
+			if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) 
+				moveTo(currentX, currentY - 1);
+			/*{
 				lighten();
 				currentY--;
 				darken();
-			}
+			}*/
 		}
 
 		/*if(Input.GetKeyDown("space")) {
