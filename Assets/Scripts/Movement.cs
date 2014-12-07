@@ -39,32 +39,36 @@ public class Movement : MonoBehaviour {
 				spriteArray[r,c] = currentSprite.GetComponent<SpriteFlipper>();
 			}
 		}
+
+		//Have the first sprite visible
+		darken();
 	}
 	
 	void Update() {
 		if(Input.GetKeyDown("right")) {
-			if(currentX < width - 1) {
+			//Movement only allowed in even rows, and when not on the very right
+			if(currentX < width - 1 && currentY % 2 == 1) {
 				lighten();
 				currentX++;
 				darken();
 			}
-		}
-		if(Input.GetKeyDown("left")) {
-			if(currentX > 0) {
+		} else if(Input.GetKeyDown("left")) {
+			//Movement only allowed in even rows, and when not on the very left
+			if(currentX > 0 && currentY % 2 == 1) {
 				lighten();
 				currentX--;
 				darken();
 			}
-		}
-		if(Input.GetKeyDown("up")) {
-			if(currentY < height - 1) {
+		} else if(Input.GetKeyDown("up")) {
+			//Movement up not allowed when at very top and when in an even row except on the edges
+			if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1)) {
 				lighten();
 				currentY++;
 				darken();
 			}
-		}
-		if(Input.GetKeyDown("down")) {
-			if(currentY > 0) {
+		} else if(Input.GetKeyDown("down")) {
+			//Movement down not allowed when at very bottom and when in an odd row except on the edges
+			if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) {
 				lighten();
 				currentY--;
 				darken();
