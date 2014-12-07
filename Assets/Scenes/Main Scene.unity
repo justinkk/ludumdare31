@@ -687,6 +687,7 @@ MonoBehaviour:
   currentY: 0
   gameControllerObject: {fileID: 127001348}
   spriteParent: {fileID: 875546344}
+  phoneControllerObject: {fileID: 1747951070}
 --- !u!4 &98537942
 Transform:
   m_ObjectHideFlags: 0
@@ -6138,6 +6139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPhoneTime: 2
   minPhoneTime: 1
+  playerObject: {fileID: 98537940}
 --- !u!1 &1754604979
 GameObject:
   m_ObjectHideFlags: 0

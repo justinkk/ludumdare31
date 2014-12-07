@@ -13,8 +13,10 @@ public class Movement : MonoBehaviour {
 
 	public GameObject gameControllerObject;     //The game controller object
 	private GameRunner gameController;          //The script of the game controller
-	public GameObject spriteParent;       //The collection of sprites that can be light or dark
-	private SpriteFlipper[,] spriteArray; //The array of flippers for the sprites
+	public GameObject spriteParent;             //The collection of sprites that can be light or dark
+	private SpriteFlipper[,] spriteArray;       //The array of flippers for the sprites
+	public GameObject phoneControllerObject;    //The phone controller object
+	private PhoneController phoneController;    //The phone controller
 
 	//Turn the current sprite light
 	public void lighten() {
@@ -35,7 +37,7 @@ public class Movement : MonoBehaviour {
 		darken();
 
 		//Clear any cell phones in the new location
-		gameController.cellPhones[currentX,currentY] = false;
+		//gameController.cellPhones[currentX,currentY] = false;
 	}
 
 	void Start() {
@@ -53,8 +55,9 @@ public class Movement : MonoBehaviour {
 			}
 		}
 
-		//Set up reference to script
+		//Set up references to scripts
 		gameController = gameControllerObject.GetComponent<GameRunner>();
+		phoneController = phoneControllerObject.GetComponent<PhoneController>();
 
 		//Have the first sprite visible
 		//darken();
@@ -81,7 +84,7 @@ public class Movement : MonoBehaviour {
 			}*/
 		} else if(Input.GetKeyDown("up")) {
 			//Movement up not allowed when at very top and when in an even row except on the edges
-			if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1)) 
+			if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1))
 				moveTo(currentX, currentY + 1);
 			/*{
 				lighten();
@@ -90,8 +93,14 @@ public class Movement : MonoBehaviour {
 			}*/
 		} else if(Input.GetKeyDown("down")) {
 			//Movement down not allowed when at very bottom and when in an odd row except on the edges
-			if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) 
+			if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) {
 				moveTo(currentX, currentY - 1);
+
+				//Quiet a phone
+				if (currentX != 0 && currentX != width - 1)
+					phoneController.QuietPhone();
+
+			}
 			/*{
 				lighten();
 				currentY--;

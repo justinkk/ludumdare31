@@ -25,6 +25,9 @@ public class PhoneController : MonoBehaviour {
 	public float minPhoneTime; //The minimum time in seconds between new phones
 	private float nextPhoneTime; //The time needed before the next phone is generated
 
+	public GameObject playerObject;  //The player
+	private Movement player;
+
 	/********Testing
 	*	private float nextTime; //Testing only
 	*	private int currX;
@@ -49,6 +52,9 @@ public class PhoneController : MonoBehaviour {
 
 		//Leave some time before the first phone appears
 		nextPhoneTime = 1.5f;
+
+		//Set up references to scripts
+		player = playerObject.GetComponent<Movement>();
 
 		/*
 		*	//Populate the dictionary
@@ -126,5 +132,12 @@ public class PhoneController : MonoBehaviour {
 
 		//Make the phone
 		createPhone(phoneX, phoneY);
+	}
+
+	//Quiet the phone where the player currently is
+	//Don't call this unless the player is located at a phone
+	public void QuietPhone() {
+		int[] phoneCoordinates = playerIndexToPhoneIndex(player.currentX, player.currentY);
+		phones[phoneCoordinates[0],phoneCoordinates[1]].setDark(false);
 	}
 }
