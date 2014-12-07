@@ -15,6 +15,15 @@ public class Movement : MonoBehaviour {
 	public GameObject spriteParent;       //The collection of sprites that can be light or dark
 	private SpriteFlipper[,] spriteArray; //The array of flippers for the sprites
 
+	//Turn the current sprite light
+	void lighten() {
+		spriteArray[currentX,currentY].setDark(false);
+	}
+
+	//Turn the current sprite dark
+	void darken() {
+		spriteArray[currentX,currentY].setDark(true);
+	}
 
 	void Start() {
 		//Set position to bottom-left
@@ -23,21 +32,53 @@ public class Movement : MonoBehaviour {
 
 		//Initialize array of sprites
 		spriteArray = new SpriteFlipper[width, height];
-		//Find the child object with the name of the current index
-		//GameObject currentSprite = spriteParent.transform.Find("Sprite0,0").gameObject;
-		GameObject currentSprite = GameObject.Find("Sprite0,0").gameObject;
-		spriteArray[0,0] = currentSprite.GetComponent<SpriteFlipper>();
+		for (int r = 0; r < width; r++) { //left to right
+			for (int c = 0; c < height; c++) { //bottom to top
+				//Find the child object with the name of the current index
+				GameObject currentSprite = spriteParent.transform.Find("Sprite" + r + "," + c).gameObject;
+				spriteArray[r,c] = currentSprite.GetComponent<SpriteFlipper>();
+			}
+		}
 	}
 	
 	void Update() {
-		if(Input.GetKeyDown("space")) {
-			if(currentX == 0) {
-				spriteArray[0,0].setDark(true);
-				currentX = 1;
-			} else {
-				spriteArray[0,0].setDark(false);
-				currentX = 0;
+		if(Input.GetKeyDown("right")) {
+			if(currentX < width - 1) {
+				lighten();
+				currentX++;
+				darken();
 			}
 		}
+		if(Input.GetKeyDown("left")) {
+			if(currentX > 0) {
+				lighten();
+				currentX--;
+				darken();
+			}
+		}
+		if(Input.GetKeyDown("up")) {
+			if(currentY < height - 1) {
+				lighten();
+				currentY++;
+				darken();
+			}
+		}
+		if(Input.GetKeyDown("down")) {
+			if(currentY > 0) {
+				lighten();
+				currentY--;
+				darken();
+			}
+		}
+
+		/*if(Input.GetKeyDown("space")) {
+			if(currentX == 0) {
+				spriteArray[0,1].setDark(true);
+				currentX = 1;
+			} else {
+				spriteArray[0,1].setDark(false);
+				currentX = 0;
+			}
+		}*/
 	}
 }
