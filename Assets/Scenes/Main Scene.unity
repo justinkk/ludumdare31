@@ -813,7 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911a4212c959a4b99aaa4b50b77c13f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockingAnger: 1.10000002
+  blockingAnger: 1.5
   phoneAnger: 2
   coolOff: 1
   maxAnger: 10

@@ -139,12 +139,15 @@ public class PhoneController : MonoBehaviour {
 	 * This also bothers everyone nearby
 	 */
 	private void createPhone(int phoneX, int phoneY) {
-		//Turn on the phone
-		phones[phoneX, phoneY].setDark(true);
-		//Bother everybody
-		ChairController[] nearbyChairs = chairsNear(phoneX,phoneY);
-		for (int i = 0; i < nearbyChairs.Length; i++) {
-			nearbyChairs[i].phonesBothering++;
+		//If the phone is already dark, skip this round
+		if (!phones[phoneX,phoneY].isCurrentlyDark) {
+			//Turn on the phone
+			phones[phoneX, phoneY].setDark(true);
+			//Bother everybody
+			ChairController[] nearbyChairs = chairsNear(phoneX,phoneY);
+			for (int i = 0; i < nearbyChairs.Length; i++) {
+				nearbyChairs[i].phonesBothering++;
+			}
 		}
 		//Wait to next phone
 		timeNextPhone();
