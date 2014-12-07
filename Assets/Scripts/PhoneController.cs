@@ -96,6 +96,44 @@ public class PhoneController : MonoBehaviour {
 		nextPhoneTime = Time.time + Random.Range(minPhoneTime, maxPhoneTime);
 	}
 
+	private ChairController[] chairsNear(int phoneX, int phoneY) {
+		int chairX = phoneIndexToPlayerIndex(phoneX, phoneY)[0];
+		int chairY = phoneIndexToPlayerIndex(phoneX, phoneY)[1];
+
+		//Make the array of chair controllers
+		//First, find how many spaces we will need in the array
+		int arraySize = 3;
+		                               //Get rid of one if we're:
+		if (phoneY == 0) arraySize--;  //in the back row
+		if (phoneX == 0) arraySize--;  //in the left column
+		if (phoneX == 4) arraySize--;  //in the right column
+
+		ChairController[] chairs = new ChairController[arraySize];
+
+		if (phoneY == 0) { // In the back row
+			if (phoneX == 0) { 			//In the left column
+				chairs[0] = transform.Find("Chair" + (chairX + 1) + "," + chairY).GetComponent<ChairController>();
+			} else if (phoneX == 4) {	//In the right column
+				chairs[0] = transform.Find("Chair" + (chairX - 1) + "," + chairY).GetComponent<ChairController>();
+			} else {					//In the middle
+				chairs[0] = transform.Find("Chair" + (chairX + 1) + "," + chairY).GetComponent<ChairController>();
+				chairs[1] = transform.Find("Chair" + (chairX - 1) + "," + chairY).GetComponent<ChairController>();
+			}
+		} else { //Not in the back row
+			chairs[0] = transform.Find("Chair" + chairX + "," + (chairY - 2)).GetComponent<ChairController>();
+			if (phoneX == 0) { 			//In the left column
+				chairs[1] = transform.Find("Chair" + (chairX + 1) + "," + chairY).GetComponent<ChairController>();
+			} else if (phoneX == 4) {	//In the right column
+				chairs[1] = transform.Find("Chair" + (chairX - 1) + "," + chairY).GetComponent<ChairController>();
+			} else {					//In the middle
+				chairs[1] = transform.Find("Chair" + (chairX + 1) + "," + chairY).GetComponent<ChairController>();
+				chairs[2] = transform.Find("Chair" + (chairX - 1) + "," + chairY).GetComponent<ChairController>();
+			}
+		}
+
+		return chairs;
+	}
+
 	/**Creates a cell phone in the given location and waits for the next one
 	 * Must pass in a valid location for a phone
 	 */
@@ -134,7 +172,7 @@ public class PhoneController : MonoBehaviour {
 		createPhone(phoneX, phoneY);
 	}
 
-	//Quiet the phone where the player currently is
+	//Quiet the phone where the player currently is, if the phone is on
 	//Don't call this unless the player is located at a phone
 	public void QuietPhone() {
 		int[] phoneCoordinates = playerIndexToPhoneIndex(player.currentX, player.currentY);

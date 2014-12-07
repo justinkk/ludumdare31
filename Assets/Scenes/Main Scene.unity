@@ -809,7 +809,7 @@ MonoBehaviour:
   blockingAnger: 2
   phoneAnger: 3
   coolOff: 1
-  maxAnger: 3
+  maxAnger: 10
   scoreMessage: 'Score: '
   scoreText: {fileID: 728081551}
   player: {fileID: 98537940}

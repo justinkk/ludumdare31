@@ -8,10 +8,11 @@ public class ChairController : MonoBehaviour {
 	public GameObject gameControllerObject;
 	public GameObject playerObject;
 	private GameRunner gameController; //The game controller
-	private Movement player;          //The player
+	private Movement player;           //The player
 	public int row;                    //The y location
 	public int column;                 //The x location
-	private Text textField;                 //The text field
+	private Text textField;            //The text field
+	public int phonesBothering;        //Number of phones currently bothering you
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,8 @@ public class ChairController : MonoBehaviour {
 		//GameObject playerObject = transform.Find("Player").gameObject;
 		player = playerObject.GetComponent<Movement>();
 		textField = transform.Find("Text").gameObject.GetComponent<Text>();
+
+		phonesBothering = 0;
 	}
 	
 	
@@ -29,13 +32,20 @@ public class ChairController : MonoBehaviour {
 		/* font: Digital 7 by Style-7
 		 * http://www.dafont.com/es/digital-7.font
 		 */
-		//If the player is blokcing your view
-		if(player.currentX == column && player.currentY >= row)
-			anger += gameController.blockingAnger*Time.deltaTime;
 
-		if(anger > 0) {
-			anger -= gameController.coolOff*Time.deltaTime;
+		 //Find change
+		 float deltaAnger = -1.0f * gameController.coolOff*Time.deltaTime;
+
+		//If the player is blokcing your view
+		if(player.currentX == column && player.currentY >= row) {
+			deltaAnger += gameController.blockingAnger*Time.deltaTime;
 		}
+
+		//If phones are bothering you
+
+
+		//Apply change
+		anger += deltaAnger;
 		if(anger < 0) {
 			anger = 0;
 		}
