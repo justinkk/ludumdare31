@@ -16,12 +16,12 @@ public class Movement : MonoBehaviour {
 	private SpriteFlipper[,] spriteArray; //The array of flippers for the sprites
 
 	//Turn the current sprite light
-	void lighten() {
+	public void lighten() {
 		spriteArray[currentX,currentY].setDark(false);
 	}
 
 	//Turn the current sprite dark
-	void darken() {
+	public void darken() {
 		spriteArray[currentX,currentY].setDark(true);
 	}
 
