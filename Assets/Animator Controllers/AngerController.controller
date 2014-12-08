@@ -66,7 +66,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: AngerPercentage
-    m_EventTreshold: .850000024
+    m_EventTreshold: .999000013
     m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
@@ -86,7 +86,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: AngerPercentage
-    m_EventTreshold: .349999994
+    m_EventTreshold: .340000004
     m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
@@ -106,7 +106,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: AngerPercentage
-    m_EventTreshold: .699999988
+    m_EventTreshold: .670000017
     m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
@@ -126,7 +126,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: AngerPercentage
-    m_EventTreshold: .699999988
+    m_EventTreshold: .670000017
     m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
@@ -166,7 +166,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: AngerPercentage
-    m_EventTreshold: .349999994
+    m_EventTreshold: .340000004
     m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
@@ -206,7 +206,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: AngerPercentage
-    m_EventTreshold: .850000024
+    m_EventTreshold: .999000013
     m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0

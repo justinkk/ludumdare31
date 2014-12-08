@@ -27,6 +27,8 @@ public class PhoneController : MonoBehaviour {
 
 	public GameObject playerObject;  //The player
 	private Movement player;
+	public GameObject gameControllerObject;
+	private GameRunner gameController;
 
 	/********Testing
 	*	private float nextTime; //Testing only
@@ -55,6 +57,7 @@ public class PhoneController : MonoBehaviour {
 
 		//Set up references to scripts
 		player = playerObject.GetComponent<Movement>();
+		gameController = gameControllerObject.GetComponent<GameRunner>();
 
 		/*
 		*	//Populate the dictionary
@@ -73,8 +76,10 @@ public class PhoneController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Time.time > nextPhoneTime)
-			generateRandomPhone();
+		if (gameController.gameIsRunning)
+			if (Time.time > nextPhoneTime)
+				generateRandomPhone();
+
 
 		/* TESTING
 		if (Time.time > nextTime) {
@@ -150,6 +155,11 @@ public class PhoneController : MonoBehaviour {
 				nearbyChairs[i].phonesBothering++;
 			}
 		}
+		//Make a sound
+		//Sound: "Beep 25" by Sound Jay
+		//http://www.soundjay.com/beep-sounds-3.html
+		transform.Find("AudioSource").gameObject.GetComponent<AudioSource>().Play();
+
 		//Wait to next phone
 		timeNextPhone();
 	}

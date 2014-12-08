@@ -35,34 +35,36 @@ public class ChairController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/* font: Digital 7 by Style-7
-		 * http://www.dafont.com/es/digital-7.font
-		 */
+		if (gameController.gameIsRunning) {
+			/* font: Digital 7 by Style-7
+			 * http://www.dafont.com/es/digital-7.font
+		 	*/
 
-		 //Find change
-		 float deltaAnger = -1.0f * gameController.coolOff*Time.deltaTime;
+			 //Find change
+		 	float deltaAnger = -1.0f * gameController.coolOff*Time.deltaTime;
 
-		//If the player is blokcing your view
-		if(player.currentX == column && player.currentY >= row) {
-			deltaAnger += gameController.blockingAnger*Time.deltaTime;
-		}
+			//If the player is blokcing your view
+			if(player.currentX == column && player.currentY >= row) {
+				deltaAnger += gameController.blockingAnger*Time.deltaTime;
+			}
 
-		//If phones are bothering you
-		deltaAnger += phonesBothering * gameController.phoneAnger * Time.deltaTime;
+			//If phones are bothering you
+			deltaAnger += phonesBothering * gameController.phoneAnger * Time.deltaTime;
 
-		//Apply change
-		anger += deltaAnger;
-		if(anger < 0) {
-			anger = 0;
-		}
+			//Apply change
+			anger += deltaAnger;
+			if(anger < 0) {	
+				anger = 0;
+			}
 
-		//Display
-		angerAnimator.SetFloat("AngerPercentage", anger / gameController.maxAnger);
-		//textField.text = "" + anger;
+			//Display
+			angerAnimator.SetFloat("AngerPercentage", anger / gameController.maxAnger);
+			//textField.text = "" + anger;
 
-		//End the game if you are too angry
-		if(anger >= gameController.maxAnger) {
-			gameController.lose(column, row);
+			//End the game if you are too angry
+			if(anger >= gameController.maxAnger && gameController.gameIsRunning) {
+				gameController.lose(column, row);
+			}
 		}
 	}
 }

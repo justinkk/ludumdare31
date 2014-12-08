@@ -97,8 +97,14 @@ public class GameRunner : MonoBehaviour {
 	}
 	*/
 
-	//Runs the graphical effects that end the game
+	//Runs the graphical and audio effects that end the game
 	private void endSequence(int chairX, int chairY) {
+		//Sound: "Beep 5" from SoundJay
+		//http://www.soundjay.com/beep-sounds-3.html
+
+		AudioSource audio = GetComponent<AudioSource>();
+		audio.Play();
+
 		playerMovement.lose();
 
 		//Turn off the chairs
@@ -117,10 +123,11 @@ public class GameRunner : MonoBehaviour {
 				}		
 			}
 		}
+		//AudioClip audioClip = GetComponent<AudioSource>().clip;
 	}
 
 	//Called when someone gets angry enough to end the game
-	public void lose(int chairX, int chairY) {
+	public void lose(int chairX, int chairY){
 		//Ends the game
 		gameIsRunning = false;
 

@@ -77,6 +77,7 @@ public class Movement : MonoBehaviour {
 	void Update() {
 		if (hasNotStarted) {
 			darken();
+			GetComponent<AudioSource>().Play();
 			hasNotStarted = false;
 		}
 
