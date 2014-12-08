@@ -11,8 +11,8 @@ public class Movement : MonoBehaviour {
 	public int currentX;
 	public int currentY;
 
-	public GameObject gameControllerObject;     //The game controller object
-	private GameRunner gameController;          //The script of the game controller
+	//public GameObject gameControllerObject;     //The game controller object
+	//private GameRunner gameController;          //The script of the game controller
 	public GameObject spriteParent;             //The collection of sprites that can be light or dark
 	private SpriteFlipper[,] spriteArray;       //The array of flippers for the sprites
 	public GameObject phoneControllerObject;    //The phone controller object
@@ -58,7 +58,7 @@ public class Movement : MonoBehaviour {
 		}
 
 		//Set up references to scripts
-		gameController = gameControllerObject.GetComponent<GameRunner>();
+		//gameController = gameControllerObject.GetComponent<GameRunner>();
 		phoneController = phoneControllerObject.GetComponent<PhoneController>();
 
 		//Have the first sprite visible

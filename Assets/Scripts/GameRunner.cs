@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -21,15 +21,12 @@ public class GameRunner : MonoBehaviour {
 	public bool gameIsRunning;  //True iff game is currently running
 	public bool[,] cellPhones;
 
-	public float maxPhoneTime; //The maximum time in seconds between new phones
-	public float minPhoneTime; //The minimum time in seconds between new phones
-	private float nextPhoneTime; //The time needed before the next phone is generated
-
 
 	//Decides when the next phone will occur
-	private void timeNextPhone() {
-		nextPhoneTime = Time.time + Random.Range(minPhoneTime, maxPhoneTime);
-	}
+	/*	private void timeNextPhone() {
+	*		nextPhoneTime = Time.time + Random.Range(minPhoneTime, maxPhoneTime);
+	*	}
+	*/
 
 	void Start() {
 		//Set up display
@@ -37,9 +34,10 @@ public class GameRunner : MonoBehaviour {
 		playerMovement = player.GetComponent<Movement>();
 		initialTime = Time.time;
 
-		//Set up phones
-		cellPhones = new bool[playerMovement.width, playerMovement.height]; //By default, all are false
-		timeNextPhone(); //Give a little bit before the first phone is made
+		/*	//Set up phones
+		*	cellPhones = new bool[playerMovement.width, playerMovement.height]; //By default, all are false
+		*	timeNextPhone(); //Give a little bit before the first phone is made
+		*/
 
 		//Start game
 		gameIsRunning = true;
@@ -51,19 +49,23 @@ public class GameRunner : MonoBehaviour {
 			scoreDisplay.text = scoreMessage + (int)score;
 
 			//Make a new phone if it's time for that
-			if (Time.time > nextPhoneTime)
-				generateRandomPhone();
+			/*	if (Time.time > nextPhoneTime)
+			*		generateRandomPhone();
+			*/
 		}
 	}
 
 	/**Creates a cell phone in the given location and waits for the next one
 	 * Must pass in a valid location for a phone
 	 */
-	private void createPhone(int phoneX, int phoneY) {
-		cellPhones[phoneX, phoneY] = true;
-		timeNextPhone();
-	}
+	/*
+	*	private void createPhone(int phoneX, int phoneY) {
+	*		cellPhones[phoneX, phoneY] = true;
+	*		timeNextPhone();
+	*	} 
+	*/
 
+	/*
 	//Randomly chooses a location for a new cell phone and generates it
 	private void generateRandomPhone() {
 		int phoneX = 0, phoneY = 0;
@@ -91,6 +93,7 @@ public class GameRunner : MonoBehaviour {
 		//Make the phone
 		createPhone(phoneX, phoneY);
 	}
+	*/
 
 	//Runs the graphical effects that end the game
 	private void endSequence() {

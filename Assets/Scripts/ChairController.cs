@@ -9,6 +9,9 @@ public class ChairController : MonoBehaviour {
 	public GameObject playerObject;
 	private GameRunner gameController; //The game controller
 	private Movement player;           //The player
+
+	private Animator angerAnimator; //Controls the animations for the anger
+
 	public int row;                    //The y location
 	public int column;                 //The x location
 	private Text textField;            //The text field
@@ -21,6 +24,9 @@ public class ChairController : MonoBehaviour {
 		gameController = gameControllerObject.GetComponent<GameRunner>();
 		//GameObject playerObject = transform.Find("Player").gameObject;
 		player = playerObject.GetComponent<Movement>();
+
+		//Get ready to display the amount of anger
+		angerAnimator = transform.Find("Anger").gameObject.GetComponent<Animator>();
 		textField = transform.Find("Text").gameObject.GetComponent<Text>();
 
 		phonesBothering = 0;
@@ -50,6 +56,9 @@ public class ChairController : MonoBehaviour {
 			anger = 0;
 		}
 
+		//Display
+		angerAnimator.SetBool("increasing", deltaAnger > 0);
+		angerAnimator.SetFloat("AngerPercentage", anger / gameController.maxAnger);
 		textField.text = "" + anger;
 
 		//End the game if you are too angry
