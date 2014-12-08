@@ -163,6 +163,7 @@ GameObject:
   - 4: {fileID: 11476260}
   - 212: {fileID: 11476263}
   - 114: {fileID: 11476262}
+  - 95: {fileID: 11476261}
   m_Layer: 0
   m_Name: Chair2,2
   m_TagString: Untagged
@@ -184,6 +185,21 @@ Transform:
   - {fileID: 1606962600}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 1
+--- !u!95 &11476261
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11476259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11476262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +248,7 @@ GameObject:
   - 4: {fileID: 13944683}
   - 212: {fileID: 13944686}
   - 114: {fileID: 13944685}
+  - 95: {fileID: 13944684}
   m_Layer: 0
   m_Name: Chair3,2
   m_TagString: Untagged
@@ -253,6 +270,21 @@ Transform:
   - {fileID: 1795772873}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 3
+--- !u!95 &13944684
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13944682}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &13944685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +569,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 98537942}
   - 114: {fileID: 98537941}
+  - 82: {fileID: 98537943}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -574,6 +607,64 @@ Transform:
   - {fileID: 875546345}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!82 &98537943
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 98537940}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 32eefbc9c45ce40909fb6043079b5447, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &103404304
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +887,7 @@ GameObject:
   - 4: {fileID: 142434055}
   - 212: {fileID: 142434058}
   - 114: {fileID: 142434057}
+  - 95: {fileID: 142434056}
   m_Layer: 0
   m_Name: Chair2,4
   m_TagString: Untagged
@@ -817,6 +909,21 @@ Transform:
   - {fileID: 147975116}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 12
+--- !u!95 &142434056
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142434054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &142434057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,6 +1578,7 @@ GameObject:
   - 4: {fileID: 279669640}
   - 212: {fileID: 279669643}
   - 114: {fileID: 279669642}
+  - 95: {fileID: 279669641}
   m_Layer: 0
   m_Name: Chair2,0
   m_TagString: Untagged
@@ -1492,6 +1600,21 @@ Transform:
   - {fileID: 659037178}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 7
+--- !u!95 &279669641
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279669639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &279669642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,6 +1742,7 @@ GameObject:
   - 4: {fileID: 309302851}
   - 212: {fileID: 309302854}
   - 114: {fileID: 309302853}
+  - 95: {fileID: 309302852}
   m_Layer: 0
   m_Name: Chair3,4
   m_TagString: Untagged
@@ -1640,6 +1764,21 @@ Transform:
   - {fileID: 700242461}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 13
+--- !u!95 &309302852
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309302850}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &309302853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,6 +1972,7 @@ GameObject:
   - 4: {fileID: 370997706}
   - 212: {fileID: 370997709}
   - 114: {fileID: 370997708}
+  - 95: {fileID: 370997707}
   m_Layer: 0
   m_Name: Chair4,4
   m_TagString: Untagged
@@ -1854,6 +1994,21 @@ Transform:
   - {fileID: 2020825447}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 10
+--- !u!95 &370997707
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370997705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &370997708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3029,6 +3184,7 @@ GameObject:
   - 4: {fileID: 810150179}
   - 212: {fileID: 810150182}
   - 114: {fileID: 810150180}
+  - 95: {fileID: 810150181}
   m_Layer: 0
   m_Name: Chair1,4
   m_TagString: Untagged
@@ -3066,6 +3222,21 @@ MonoBehaviour:
   row: 4
   column: 1
   phonesBothering: 0
+--- !u!95 &810150181
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 810150178}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &810150182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3536,6 +3707,7 @@ GameObject:
   - 4: {fileID: 1041008120}
   - 212: {fileID: 1041008123}
   - 114: {fileID: 1041008122}
+  - 95: {fileID: 1041008121}
   m_Layer: 0
   m_Name: Chair4,0
   m_TagString: Untagged
@@ -3557,6 +3729,21 @@ Transform:
   - {fileID: 1879239710}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 5
+--- !u!95 &1041008121
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041008119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1041008122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3605,6 +3792,7 @@ GameObject:
   - 4: {fileID: 1056462662}
   - 212: {fileID: 1056462665}
   - 114: {fileID: 1056462664}
+  - 95: {fileID: 1056462663}
   m_Layer: 0
   m_Name: Chair5,4
   m_TagString: Untagged
@@ -3626,6 +3814,21 @@ Transform:
   - {fileID: 360360384}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 14
+--- !u!95 &1056462663
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1056462661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1056462664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3864,6 +4067,7 @@ GameObject:
   - 4: {fileID: 1085083632}
   - 212: {fileID: 1085083635}
   - 114: {fileID: 1085083634}
+  - 95: {fileID: 1085083633}
   m_Layer: 0
   m_Name: Chair3,0
   m_TagString: Untagged
@@ -3885,6 +4089,21 @@ Transform:
   - {fileID: 1920978186}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 8
+--- !u!95 &1085083633
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085083631}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1085083634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4552,6 +4771,7 @@ GameObject:
   - 4: {fileID: 1283189001}
   - 212: {fileID: 1283189004}
   - 114: {fileID: 1283189003}
+  - 95: {fileID: 1283189002}
   m_Layer: 0
   m_Name: Chair5,2
   m_TagString: Untagged
@@ -4573,6 +4793,21 @@ Transform:
   - {fileID: 816619545}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 4
+--- !u!95 &1283189002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283189000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1283189003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4937,6 +5172,7 @@ GameObject:
   - 4: {fileID: 1447646435}
   - 212: {fileID: 1447646438}
   - 114: {fileID: 1447646437}
+  - 95: {fileID: 1447646436}
   m_Layer: 0
   m_Name: Chair1,2
   m_TagString: Untagged
@@ -4958,6 +5194,21 @@ Transform:
   - {fileID: 951583349}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 2
+--- !u!95 &1447646436
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447646434}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1447646437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5006,6 +5257,7 @@ GameObject:
   - 4: {fileID: 1452680703}
   - 212: {fileID: 1452680701}
   - 114: {fileID: 1452680702}
+  - 95: {fileID: 1452680704}
   m_Layer: 0
   m_Name: Chair1,0
   m_TagString: Untagged
@@ -5065,6 +5317,21 @@ Transform:
   - {fileID: 1167248910}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 6
+--- !u!95 &1452680704
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452680700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1465878109
 GameObject:
   m_ObjectHideFlags: 0
@@ -6079,6 +6346,8 @@ GameObject:
   - 4: {fileID: 1780667953}
   - 212: {fileID: 1780667956}
   - 114: {fileID: 1780667955}
+  - 114: {fileID: 1780667954}
+  - 95: {fileID: 1780667957}
   m_Layer: 0
   m_Name: Chair4,2
   m_TagString: Untagged
@@ -6100,6 +6369,18 @@ Transform:
   - {fileID: 1840918905}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 0
+--- !u!114 &1780667954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780667952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feea654ad85664711a8caa5694f44432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyDark: 0
 --- !u!114 &1780667955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6138,6 +6419,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &1780667957
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780667952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1795772872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7036,6 +7332,7 @@ GameObject:
   - 4: {fileID: 2024375124}
   - 212: {fileID: 2024375127}
   - 114: {fileID: 2024375126}
+  - 95: {fileID: 2024375125}
   m_Layer: 0
   m_Name: Chair5,0
   m_TagString: Untagged
@@ -7057,6 +7354,21 @@ Transform:
   - {fileID: 171016346}
   m_Father: {fileID: 1747951071}
   m_RootOrder: 9
+--- !u!95 &2024375125
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024375123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d322590381fdf41db92a415b51cbc350, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2024375126
 MonoBehaviour:
   m_ObjectHideFlags: 0

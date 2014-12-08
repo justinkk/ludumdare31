@@ -104,13 +104,18 @@ public class GameRunner : MonoBehaviour {
 		//Turn off the chairs
 		for (int c = 1; c < 6; c++) { //Left to right
 			for (int r = 0; r <= 4; r += 2) { //Bottom to top
-				GameObject currentChair = chairs.transform.Find("Chair" + c + "," + r).gameObject;
+				//Skip the chair that lost you the game
+				if (c != chairX || r != chairY) {
+					GameObject currentChair = chairs.transform.Find("Chair" + c + "," + r).gameObject;
 
-				//Turn off the anger display
-				currentChair.transform.Find("Anger").gameObject.GetComponent<Animator>().SetTrigger("gameOver");
-				//Turn off the phone display
-				currentChair.transform.Find("Phone").gameObject.GetComponent<SpriteFlipper>().lose();			}
-
+					//Turn off the chair
+					currentChair.GetComponent<Animator>().SetTrigger("gameOver");
+					//Turn off the anger display
+					currentChair.transform.Find("Anger").gameObject.GetComponent<Animator>().SetTrigger("gameOver");
+					//Turn off the phone display
+					currentChair.transform.Find("Phone").gameObject.GetComponent<SpriteFlipper>().lose();	
+				}		
+			}
 		}
 	}
 

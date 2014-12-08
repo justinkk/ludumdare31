@@ -34,6 +34,10 @@ public class Movement : MonoBehaviour {
 
 	//Moves to a location, clearing any cell phones in that location
 	public void moveTo(int newX, int newY) {
+		//Sound: "Beep 28" from SoundJay
+		//http://www.soundjay.com/beep-sounds-3.html
+		GetComponent<AudioSource>().Play();
+
 		//Change the appearance
 		lighten();
 		currentX = newX;
