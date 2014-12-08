@@ -163,6 +163,7 @@ GameObject:
   - 224: {fileID: 11476260}
   - 114: {fileID: 11476262}
   - 223: {fileID: 11476261}
+  - 212: {fileID: 11476263}
   m_Layer: 0
   m_Name: Chair2,2
   m_TagString: Untagged
@@ -222,6 +223,28 @@ MonoBehaviour:
   row: 2
   column: 2
   phonesBothering: 0
+--- !u!212 &11476263
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11476259}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &13944682
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +255,7 @@ GameObject:
   - 224: {fileID: 13944683}
   - 114: {fileID: 13944685}
   - 223: {fileID: 13944684}
+  - 212: {fileID: 13944686}
   m_Layer: 0
   m_Name: Chair3,2
   m_TagString: Untagged
@@ -291,6 +315,28 @@ MonoBehaviour:
   row: 2
   column: 3
   phonesBothering: 0
+--- !u!212 &13944686
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13944682}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &33333936
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,7 +913,7 @@ Transform:
   m_GameObject: {fileID: 135614069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1056462662}
   m_RootOrder: 1
@@ -891,7 +937,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &135614072
 Animator:
@@ -930,6 +976,7 @@ GameObject:
   - 224: {fileID: 142434055}
   - 114: {fileID: 142434057}
   - 223: {fileID: 142434056}
+  - 212: {fileID: 142434058}
   m_Layer: 0
   m_Name: Chair2,4
   m_TagString: Untagged
@@ -989,6 +1036,28 @@ MonoBehaviour:
   row: 4
   column: 2
   phonesBothering: 0
+--- !u!212 &142434058
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142434054}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &164038356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1529,7 @@ Transform:
   m_GameObject: {fileID: 272373097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 11476260}
   m_RootOrder: 1
@@ -1484,7 +1553,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &272373100
 Animator:
@@ -1523,6 +1592,7 @@ GameObject:
   - 224: {fileID: 279669640}
   - 114: {fileID: 279669642}
   - 223: {fileID: 279669641}
+  - 212: {fileID: 279669643}
   m_Layer: 0
   m_Name: Chair2,0
   m_TagString: Untagged
@@ -1582,6 +1652,28 @@ MonoBehaviour:
   row: 0
   column: 2
   phonesBothering: 0
+--- !u!212 &279669643
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279669639}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &289203194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1829,7 @@ GameObject:
   - 224: {fileID: 309302851}
   - 114: {fileID: 309302853}
   - 223: {fileID: 309302852}
+  - 212: {fileID: 309302854}
   m_Layer: 0
   m_Name: Chair3,4
   m_TagString: Untagged
@@ -1796,6 +1889,28 @@ MonoBehaviour:
   row: 4
   column: 3
   phonesBothering: 0
+--- !u!212 &309302854
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309302850}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &364960877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +2066,7 @@ GameObject:
   - 224: {fileID: 370997706}
   - 114: {fileID: 370997708}
   - 223: {fileID: 370997707}
+  - 212: {fileID: 370997709}
   m_Layer: 0
   m_Name: Chair4,4
   m_TagString: Untagged
@@ -2010,6 +2126,28 @@ MonoBehaviour:
   row: 4
   column: 4
   phonesBothering: 0
+--- !u!212 &370997709
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370997705}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &376931696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,7 +2224,7 @@ Transform:
   m_GameObject: {fileID: 386752531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1780667953}
   m_RootOrder: 1
@@ -2110,7 +2248,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &386752534
 Animator:
@@ -2215,7 +2353,7 @@ Transform:
   m_GameObject: {fileID: 435570163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1447646435}
   m_RootOrder: 1
@@ -2239,7 +2377,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &435570166
 Animator:
@@ -2681,7 +2819,7 @@ Transform:
   m_GameObject: {fileID: 588330891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1085083632}
   m_RootOrder: 1
@@ -2705,7 +2843,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &588330894
 Animator:
@@ -2889,7 +3027,7 @@ Transform:
   m_GameObject: {fileID: 705158258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 13944683}
   m_RootOrder: 1
@@ -2913,7 +3051,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &705158261
 Animator:
@@ -3365,6 +3503,7 @@ GameObject:
   - 224: {fileID: 810150181}
   - 114: {fileID: 810150180}
   - 223: {fileID: 810150179}
+  - 212: {fileID: 810150182}
   m_Layer: 0
   m_Name: Chair1,4
   m_TagString: Untagged
@@ -3424,6 +3563,28 @@ RectTransform:
   m_AnchoredPosition: {x: -3.5, y: 1.23000002}
   m_SizeDelta: {x: 40, y: 20}
   m_Pivot: {x: .5, y: .5}
+--- !u!212 &810150182
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 810150178}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &858155354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,6 +4283,7 @@ GameObject:
   - 224: {fileID: 1041008120}
   - 114: {fileID: 1041008122}
   - 223: {fileID: 1041008121}
+  - 212: {fileID: 1041008123}
   m_Layer: 0
   m_Name: Chair4,0
   m_TagString: Untagged
@@ -4181,6 +4343,28 @@ MonoBehaviour:
   row: 0
   column: 4
   phonesBothering: 0
+--- !u!212 &1041008123
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041008119}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1056462661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4191,6 +4375,7 @@ GameObject:
   - 224: {fileID: 1056462662}
   - 114: {fileID: 1056462664}
   - 223: {fileID: 1056462663}
+  - 212: {fileID: 1056462665}
   m_Layer: 0
   m_Name: Chair5,4
   m_TagString: Untagged
@@ -4250,6 +4435,28 @@ MonoBehaviour:
   row: 4
   column: 5
   phonesBothering: 0
+--- !u!212 &1056462665
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1056462661}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1061204897
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,7 +4483,7 @@ Transform:
   m_GameObject: {fileID: 1061204897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 370997706}
   m_RootOrder: 1
@@ -4300,7 +4507,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1061204900
 Animator:
@@ -4500,6 +4707,7 @@ GameObject:
   - 224: {fileID: 1085083632}
   - 114: {fileID: 1085083634}
   - 223: {fileID: 1085083633}
+  - 212: {fileID: 1085083635}
   m_Layer: 0
   m_Name: Chair3,0
   m_TagString: Untagged
@@ -4559,6 +4767,28 @@ MonoBehaviour:
   row: 0
   column: 3
   phonesBothering: 0
+--- !u!212 &1085083635
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085083631}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1109646322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4664,7 +4894,7 @@ Transform:
   m_GameObject: {fileID: 1135690146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1283189001}
   m_RootOrder: 1
@@ -4688,7 +4918,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1135690149
 Animator:
@@ -5096,7 +5326,7 @@ Transform:
   m_GameObject: {fileID: 1203720473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1041008120}
   m_RootOrder: 1
@@ -5120,7 +5350,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1203720476
 Animator:
@@ -5354,6 +5584,7 @@ GameObject:
   - 224: {fileID: 1283189001}
   - 114: {fileID: 1283189003}
   - 223: {fileID: 1283189002}
+  - 212: {fileID: 1283189004}
   m_Layer: 0
   m_Name: Chair5,2
   m_TagString: Untagged
@@ -5413,6 +5644,28 @@ MonoBehaviour:
   row: 2
   column: 5
   phonesBothering: 0
+--- !u!212 &1283189004
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283189000}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1307898569
 GameObject:
   m_ObjectHideFlags: 0
@@ -5489,7 +5742,7 @@ Transform:
   m_GameObject: {fileID: 1327980657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 309302851}
   m_RootOrder: 1
@@ -5513,7 +5766,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1327980660
 Animator:
@@ -5568,7 +5821,7 @@ Transform:
   m_GameObject: {fileID: 1342421822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2024375124}
   m_RootOrder: 1
@@ -5592,7 +5845,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1342421825
 Animator:
@@ -5971,6 +6224,7 @@ GameObject:
   - 224: {fileID: 1447646435}
   - 114: {fileID: 1447646437}
   - 223: {fileID: 1447646436}
+  - 212: {fileID: 1447646438}
   m_Layer: 0
   m_Name: Chair1,2
   m_TagString: Untagged
@@ -6030,6 +6284,28 @@ MonoBehaviour:
   row: 2
   column: 1
   phonesBothering: 0
+--- !u!212 &1447646438
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447646434}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1452680700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,6 +6316,7 @@ GameObject:
   - 224: {fileID: 1452680704}
   - 114: {fileID: 1452680702}
   - 223: {fileID: 1452680703}
+  - 212: {fileID: 1452680701}
   m_Layer: 0
   m_Name: Chair1,0
   m_TagString: Untagged
@@ -6047,6 +6324,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!212 &1452680701
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452680700}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1452680702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6204,7 +6503,7 @@ Transform:
   m_GameObject: {fileID: 1472328170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 810150181}
   m_RootOrder: 1
@@ -6228,7 +6527,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1472328173
 Animator:
@@ -6283,7 +6582,7 @@ Transform:
   m_GameObject: {fileID: 1492771582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 142434055}
   m_RootOrder: 1
@@ -6307,7 +6606,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1492771585
 Animator:
@@ -6582,7 +6881,7 @@ Transform:
   m_GameObject: {fileID: 1589322172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 279669640}
   m_RootOrder: 1
@@ -6606,7 +6905,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1589322175
 Animator:
@@ -6806,7 +7105,7 @@ Transform:
   m_GameObject: {fileID: 1642108079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1452680704}
   m_RootOrder: 1
@@ -6830,7 +7129,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: eb31e5c8321b441da836b701a255cc69, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1642108082
 Animator:
@@ -7229,6 +7528,7 @@ GameObject:
   - 224: {fileID: 1780667953}
   - 114: {fileID: 1780667955}
   - 223: {fileID: 1780667954}
+  - 212: {fileID: 1780667956}
   m_Layer: 0
   m_Name: Chair4,2
   m_TagString: Untagged
@@ -7288,6 +7588,28 @@ MonoBehaviour:
   row: 2
   column: 4
   phonesBothering: 0
+--- !u!212 &1780667956
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780667952}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1804145795
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,7 +7883,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .749019623, g: 1, b: .80392158, a: .0196078438}
+  m_BackGroundColor: {r: .870588243, g: .929411769, b: .894117653, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -8038,6 +8360,7 @@ GameObject:
   - 224: {fileID: 2024375124}
   - 114: {fileID: 2024375126}
   - 223: {fileID: 2024375125}
+  - 212: {fileID: 2024375127}
   m_Layer: 0
   m_Name: Chair5,0
   m_TagString: Untagged
@@ -8097,6 +8420,28 @@ MonoBehaviour:
   row: 0
   column: 5
   phonesBothering: 0
+--- !u!212 &2024375127
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024375123}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300002, guid: 612a1f6a9c2ec40fb968c775093aa93b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2071031735
 GameObject:
   m_ObjectHideFlags: 0

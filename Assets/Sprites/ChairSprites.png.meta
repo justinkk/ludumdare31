@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 612a1f6a9c2ec40fb968c775093aa93b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ChairSprites_0
+    21300002: ChairSprites_1
+    21300004: ChairSprites_2
+    21300006: ChairSprites_3
+    21300008: ChairSprites_4
+    21300010: ChairSprites_5
+    21300012: ChairSprites_6
+    21300014: ChairSprites_7
+    21300016: ChairSprites_8
+    21300018: ChairSprites_9
+    21300020: ChairSprites_10
+    21300022: ChairSprites_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ChairSprites_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 116
+        width: 144
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 114
+        width: 144
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 332
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 334
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 259
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_5
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 249
+        width: 65
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 337
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 30
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 30
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_9
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 29
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 30
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ChairSprites_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 28
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
