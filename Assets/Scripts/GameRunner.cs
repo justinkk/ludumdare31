@@ -21,6 +21,8 @@ public class GameRunner : MonoBehaviour {
 	public bool gameIsRunning;  //True iff game is currently running
 	//public bool[,] cellPhones;
 
+	public GameObject chairs;   //The chairs
+
 
 	//Decides when the next phone will occur
 	/*	private void timeNextPhone() {
@@ -99,7 +101,17 @@ public class GameRunner : MonoBehaviour {
 	private void endSequence(int chairX, int chairY) {
 		playerMovement.lose();
 
+		//Turn off the chairs
+		for (int c = 1; c < 6; c++) { //Left to right
+			for (int r = 0; r <= 4; r += 2) { //Bottom to top
+				GameObject currentChair = chairs.transform.Find("Chair" + c + "," + r).gameObject;
 
+				//Turn off the anger display
+				currentChair.transform.Find("Anger").gameObject.GetComponent<Animator>().SetTrigger("gameOver");
+				//Turn off the phone display
+				currentChair.transform.Find("Phone").gameObject.GetComponent<SpriteFlipper>().lose();			}
+
+		}
 	}
 
 	//Called when someone gets angry enough to end the game

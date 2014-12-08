@@ -688,6 +688,7 @@ MonoBehaviour:
   scoreText: {fileID: 728081551}
   player: {fileID: 98537940}
   gameIsRunning: 0
+  chairs: {fileID: 1747951070}
 --- !u!224 &127001352
 RectTransform:
   m_ObjectHideFlags: 0
