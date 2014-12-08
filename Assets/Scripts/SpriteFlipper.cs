@@ -15,4 +15,9 @@ public class SpriteFlipper : MonoBehaviour {
 		anim.SetBool("isDark", isDark);
 		isCurrentlyDark = isDark;
 	}
+
+	//Switch to the game over animation forever
+	public void lose() {
+		anim.SetTrigger("gameOver");
+	}
 }

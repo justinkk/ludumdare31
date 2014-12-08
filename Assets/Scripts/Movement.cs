@@ -28,6 +28,10 @@ public class Movement : MonoBehaviour {
 		spriteArray[currentX,currentY].setDark(true);
 	}
 
+	public void lose() {
+		spriteArray[currentX,currentY].lose();
+	}
+
 	//Moves to a location, clearing any cell phones in that location
 	public void moveTo(int newX, int newY) {
 		//Change the appearance

@@ -19,7 +19,7 @@ public class GameRunner : MonoBehaviour {
 	public GameObject player;   //The player
 	private Movement playerMovement; //The player's movement controller
 	public bool gameIsRunning;  //True iff game is currently running
-	public bool[,] cellPhones;
+	//public bool[,] cellPhones;
 
 
 	//Decides when the next phone will occur
@@ -97,10 +97,7 @@ public class GameRunner : MonoBehaviour {
 
 	//Runs the graphical effects that end the game
 	private void endSequence() {
-		playerMovement.lighten();
-		playerMovement.currentX = 0;
-		playerMovement.currentY = 0;
-		playerMovement.darken();
+		playerMovement.lose();
 	}
 
 	//Called when someone gets angry enough to end the game

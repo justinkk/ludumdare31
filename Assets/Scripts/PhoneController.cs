@@ -142,6 +142,7 @@ public class PhoneController : MonoBehaviour {
 		//If the phone is already dark, skip this round
 		if (!phones[phoneX,phoneY].isCurrentlyDark) {
 			//Turn on the phone
+			//print ("setting dark at" + phoneX + "," + phoneY);
 			phones[phoneX, phoneY].setDark(true);
 			//Bother everybody
 			ChairController[] nearbyChairs = chairsNear(phoneX,phoneY);
