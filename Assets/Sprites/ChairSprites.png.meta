@@ -108,10 +108,10 @@ TextureImporter:
     - name: ChairSprites_5
       rect:
         serializedVersion: 2
-        x: 266
-        y: 249
-        width: 65
-        height: 71
+        x: 276
+        y: 258
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
