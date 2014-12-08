@@ -14,7 +14,7 @@ public class ChairController : MonoBehaviour {
 
 	public int row;                    //The y location
 	public int column;                 //The x location
-	private Text textField;            //The text field
+	//private Text textField;            //The text field
 	public int phonesBothering;        //Number of phones currently bothering you
 
 	// Use this for initialization
@@ -27,7 +27,7 @@ public class ChairController : MonoBehaviour {
 
 		//Get ready to display the amount of anger
 		angerAnimator = transform.Find("Anger").gameObject.GetComponent<Animator>();
-		textField = transform.Find("Text").gameObject.GetComponent<Text>();
+		//textField = transform.Find("Text").gameObject.GetComponent<Text>();
 
 		phonesBothering = 0;
 	}
@@ -57,9 +57,8 @@ public class ChairController : MonoBehaviour {
 		}
 
 		//Display
-		angerAnimator.SetBool("increasing", deltaAnger > 0);
 		angerAnimator.SetFloat("AngerPercentage", anger / gameController.maxAnger);
-		textField.text = "" + anger;
+		//textField.text = "" + anger;
 
 		//End the game if you are too angry
 		if(anger >= gameController.maxAnger) {
