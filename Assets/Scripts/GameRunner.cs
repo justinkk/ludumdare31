@@ -96,16 +96,18 @@ public class GameRunner : MonoBehaviour {
 	*/
 
 	//Runs the graphical effects that end the game
-	private void endSequence() {
+	private void endSequence(int chairX, int chairY) {
 		playerMovement.lose();
+
+
 	}
 
 	//Called when someone gets angry enough to end the game
-	public void Lose() {
+	public void lose(int chairX, int chairY) {
 		//Ends the game
 		gameIsRunning = false;
 
 		//Final graphical effects
-		endSequence();
+		endSequence(chairX, chairY);
 	}
 }

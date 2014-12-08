@@ -62,7 +62,7 @@ public class ChairController : MonoBehaviour {
 
 		//End the game if you are too angry
 		if(anger >= gameController.maxAnger) {
-			gameController.Lose();
+			gameController.lose(column, row);
 		}
 	}
 }
