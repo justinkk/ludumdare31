@@ -11,8 +11,8 @@ public class Movement : MonoBehaviour {
 	public int currentX;
 	public int currentY;
 
-	//public GameObject gameControllerObject;     //The game controller object
-	//private GameRunner gameController;          //The script of the game controller
+	public GameObject gameControllerObject;     //The game controller object
+	private GameRunner gameController;          //The script of the game controller
 	public GameObject spriteParent;             //The collection of sprites that can be light or dark
 	private SpriteFlipper[,] spriteArray;       //The array of flippers for the sprites
 	public GameObject phoneControllerObject;    //The phone controller object
@@ -66,7 +66,7 @@ public class Movement : MonoBehaviour {
 		}
 
 		//Set up references to scripts
-		//gameController = gameControllerObject.GetComponent<GameRunner>();
+		gameController = gameControllerObject.GetComponent<GameRunner>();
 		phoneController = phoneControllerObject.GetComponent<PhoneController>();
 
 		//Have the first sprite visible
@@ -81,58 +81,61 @@ public class Movement : MonoBehaviour {
 			hasNotStarted = false;
 		}
 
-		if(Input.GetKeyDown("right")) {
-			//Movement only allowed in even rows, and when not on the very right
-			if(currentX < width - 1 && currentY % 2 == 1) 
-				moveTo(currentX + 1, currentY);
-			/*{
-				lighten();
-				currentX++;
-				darken();
-			}*/
-		} else if(Input.GetKeyDown("left")) {
-			//Movement only allowed in even rows, and when not on the very left
-			if(currentX > 0 && currentY % 2 == 1) 
-				moveTo(currentX-1, currentY);
-			/*{
-				lighten();
-				currentX--;
-				darken();
-			}*/
-		} else if(Input.GetKeyDown("up")) {
-			//Movement up not allowed when at very top and when in an even row except on the edges
-			if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1))
-				moveTo(currentX, currentY + 1);
-			/*{
-				lighten();
-				currentY++;
-				darken();
-			}*/
-		} else if(Input.GetKeyDown("down")) {
-			//Movement down not allowed when at very bottom and when in an odd row except on the edges
-			if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) {
-				moveTo(currentX, currentY - 1);
+		//Only move if the game hasn't ended
+		if (gameController.gameIsRunning) {
+			if(Input.GetKeyDown("right")) {
+				//Movement only allowed in even rows, and when not on the very right
+				if(currentX < width - 1 && currentY % 2 == 1) 
+					moveTo(currentX + 1, currentY);
+				/*{
+					lighten();
+					currentX++;
+					darken();
+				}*/
+			} else if(Input.GetKeyDown("left")) {
+				//Movement only allowed in even rows, and when not on the very left
+				if(currentX > 0 && currentY % 2 == 1) 
+					moveTo(currentX-1, currentY);
+				/*{
+					lighten();
+					currentX--;
+					darken();
+				}*/
+			} else if(Input.GetKeyDown("up")) {
+				//Movement up not allowed when at very top and when in an even row except on the edges
+				if(currentY < height - 1 && (currentY % 2 == 0 || currentX == 0 || currentX == width - 1))
+					moveTo(currentX, currentY + 1);
+				/*{
+					lighten();
+					currentY++;
+					darken();
+				}*/
+			} else if(Input.GetKeyDown("down")) {
+				//Movement down not allowed when at very bottom and when in an odd row except on the edges
+				if(currentY > 0 && (currentY % 2 == 1 || currentX == 0 || currentX == width - 1)) {
+					moveTo(currentX, currentY - 1);
 
-				//Quiet a phone
-				if (currentX != 0 && currentX != width - 1)
-					phoneController.QuietPhone();
+					//Quiet a phone
+					if (currentX != 0 && currentX != width - 1)
+						phoneController.QuietPhone();
 
+				}
+				/*{
+					lighten();
+					currentY--;
+					darken();
+				}*/
 			}
-			/*{
-				lighten();
-				currentY--;
-				darken();
+
+			/*if(Input.GetKeyDown("space")) {
+				if(currentX == 0) {
+					spriteArray[0,1].setDark(true);
+					currentX = 1;
+				} else {
+					spriteArray[0,1].setDark(false);
+					currentX = 0;
+				}
 			}*/
 		}
-
-		/*if(Input.GetKeyDown("space")) {
-			if(currentX == 0) {
-				spriteArray[0,1].setDark(true);
-				currentX = 1;
-			} else {
-				spriteArray[0,1].setDark(false);
-				currentX = 0;
-			}
-		}*/
 	}
 }

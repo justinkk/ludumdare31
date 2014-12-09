@@ -21,9 +21,19 @@ public class PhoneController : MonoBehaviour {
 
 	private SpriteFlipper[,] phones;
 
-	public float maxPhoneTime; //The maximum time in seconds between new phones
-	public float minPhoneTime; //The minimum time in seconds between new phones
+	//public float maxPhoneTime; //The maximum time in seconds between new phones
+	//public float minPhoneTime; //The minimum time in seconds between new phones
+	public float phoneDelay;     //Time between when phones spawn
 	private float nextPhoneTime; //The time needed before the next phone is generated
+
+	private float skipChance;    //Chance of skipping a phone
+	private float doubleChance;   //Chance of generating two phones next time
+	private bool skipped;        //True iff the last phone was skipped
+
+	public float skipAcceleration;   //Increased chance of skipping every time a phone is not skipped
+	public float minSkipChance;      //Minimum probability of skipping
+	public float doubleAcceleration; //Increased chance of doubling every time a phone is not doubled
+	public float maxDoubleChance;    //Maximum probability of doubling
 
 	public GameObject playerObject;  //The player
 	private Movement player;
@@ -59,6 +69,11 @@ public class PhoneController : MonoBehaviour {
 		player = playerObject.GetComponent<Movement>();
 		gameController = gameControllerObject.GetComponent<GameRunner>();
 
+		//Set up the skippings
+		skipped = false;
+		skipChance = 1.0f;
+		doubleChance = 0.0f;
+
 		/*
 		*	//Populate the dictionary
 		*	phones = new Dictionary<Tuple<int,int>, bool>();
@@ -77,8 +92,32 @@ public class PhoneController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (gameController.gameIsRunning)
-			if (Time.time > nextPhoneTime)
-				generateRandomPhone();
+			if (Time.time > nextPhoneTime) {
+				//Handle skipping
+				if (skipped) {
+					skipped = false;
+					if (skipChance > minSkipChance)
+						skipChance -= skipAcceleration;
+					//Always make a new phone if the last one was skipped
+					generateRandomPhone();
+				} else {
+					if (Random.value < skipChance)
+						skipped = true;
+					else {
+						generateRandomPhone();
+						//Handle possibility for a double phone
+						if (Random.value < doubleChance)
+							generateRandomPhone();
+						else if (doubleChance < maxDoubleChance)
+							doubleChance += doubleAcceleration;
+					}
+				}
+
+
+				//Wait to next phone
+				timeNextPhone();
+			}
+
 
 
 		/* TESTING
@@ -98,7 +137,7 @@ public class PhoneController : MonoBehaviour {
 
 	//Times when the next phone will appear
 	private void timeNextPhone() {
-		nextPhoneTime = Time.time + Random.Range(minPhoneTime, maxPhoneTime);
+		nextPhoneTime = Time.time + phoneDelay;
 	}
 
 	private ChairController[] chairsNear(int phoneX, int phoneY) {
@@ -154,14 +193,12 @@ public class PhoneController : MonoBehaviour {
 			for (int i = 0; i < nearbyChairs.Length; i++) {
 				nearbyChairs[i].phonesBothering++;
 			}
-		}
-		//Make a sound
-		//Sound: "Beep 25" by Sound Jay
-		//http://www.soundjay.com/beep-sounds-3.html
-		transform.Find("AudioSource").gameObject.GetComponent<AudioSource>().Play();
 
-		//Wait to next phone
-		timeNextPhone();
+			//Make a sound
+			//Sound: "Beep 25" by Sound Jay
+			//http://www.soundjay.com/beep-sounds-3.html
+			transform.Find("AudioSource").gameObject.GetComponent<AudioSource>().Play();
+		}
 	}
 
 	//Randomly chooses a location for a new cell phone and generates it

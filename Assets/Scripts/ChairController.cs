@@ -62,7 +62,7 @@ public class ChairController : MonoBehaviour {
 			//textField.text = "" + anger;
 
 			//End the game if you are too angry
-			if(anger >= gameController.maxAnger && gameController.gameIsRunning) {
+			if(anger >= gameController.maxAnger) {
 				gameController.lose(column, row);
 			}
 		}
