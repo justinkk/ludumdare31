@@ -773,11 +773,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911a4212c959a4b99aaa4b50b77c13f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockingAnger: 2
-  phoneAnger: 2
+  blockingAnger: 3
+  phoneAnger: 3
   coolOff: 1
-  maxAnger: 20
-  scoreMessage: 'Score: '
+  maxAnger: 30
+  scoreMessage: 'Score '
   scoreText: {fileID: 728081551}
   player: {fileID: 98537940}
   gameIsRunning: 0
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 4f89107a07b554794a0c07fcfe5ae291, type: 3}
+    m_Font: {fileID: 12800000, guid: f7baeafbc96e149b38ec8f61689237aa, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -3075,7 +3075,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 5, y: 0}
-  m_SizeDelta: {x: 160, y: -5}
+  m_SizeDelta: {x: 160, y: -3}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &742418269
 GameObject:
@@ -6476,10 +6476,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phoneDelay: 1.5
-  skipAcceleration: .0949999988
-  minSkipChance: .050999999
-  doubleAcceleration: .00999999978
-  maxDoubleChance: .0198999997
+  skipAcceleration: .0874999985
+  minSkipChance: .126000002
+  doubleAcceleration: .0250000004
+  maxDoubleChance: .199000001
   playerObject: {fileID: 98537940}
   gameControllerObject: {fileID: 127001348}
 --- !u!1 &1780667952

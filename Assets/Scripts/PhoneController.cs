@@ -183,9 +183,12 @@ public class PhoneController : MonoBehaviour {
 	 * This also bothers everyone nearby
 	 */
 	private void createPhone(int phoneX, int phoneY) {
+		int[] playerCoords = playerIndexToPhoneIndex(player.currentX,player.currentY); 
+
 		//If the phone is already dark, skip this round
-		if (!phones[phoneX,phoneY].isCurrentlyDark) {
-			//Turn on the phone
+		if (!phones[phoneX,phoneY].isCurrentlyDark				   //Don't make two phones in one spot
+			&& !(playerCoords[0] == phoneX && playerCoords[1] == phoneY)) {	//Don't make a phone where
+			//Turn on the phone                                             //you currently are
 			//print ("setting dark at" + phoneX + "," + phoneY);
 			phones[phoneX, phoneY].setDark(true);
 			//Bother everybody
